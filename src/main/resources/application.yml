@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: TPO10
+  h2:
+    console:
+      path: /linkDatabase
+  datasource:
+    url: jdbc:h2:file:./db/links
+    username: admin
+    password: admin
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: update
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
